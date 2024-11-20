@@ -3,3 +3,51 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin: 30px;
+}
+.title {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+.play-button {
+  border-radius: 60px;
+  background-color: rgb(0, 0, 0);
+  border: 1px rgb(182, 182, 182) solid;
+  padding: 9px;
+  margin-right: 12px;
+}
+.rock-image, .paper-image, .scissors-image {
+  width: 90px;
+  border-radius: 50px;
+  border: none;
+  background-color: black;
+}
+.result {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.moves {
+  margin-bottom: 30px;
+  font-size: 21px;
+}
+.script-moves {
+  width: 42px;
+}
+.score {
+  margin-bottom: 30px;
+  font-size: 21px;
+}
+.reset-button {
+  padding: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
