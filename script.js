@@ -7,6 +7,22 @@ let score = JSON.parse(localStorage.getItem('score')) ||
 
 updateScore();
 
+let isAutoPlaying = false;
+let intervalId;
+
+function autoPlay() {
+  if (!isAutoPlaying) {
+    intervalId = setInterval(function() {
+      const playerMove = pickComputerMove();
+      playGame(playerMove);
+    }, 1000);
+    isAutoPlaying = true;
+  } else if (isAutoPlaying) {
+    clearInterval(intervalId);
+    isAutoPlaying = false;
+  }
+}
+
 function pickComputerMove() {
   const randomNumber = Math.random();
 
