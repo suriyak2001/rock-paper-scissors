@@ -14,17 +14,23 @@ body {
   margin-bottom: 24px;
 }
 .play-button {
+  background-color: transparent;
+  border: 3px solid white;
+  width: 120px;
+  height: 120px;
   border-radius: 60px;
-  background-color: rgb(0, 0, 0);
-  border: 1px rgb(182, 182, 182) solid;
-  padding: 9px;
   margin-right: 12px;
+  cursor: pointer;
+  transition: opacity 0.3s;
 }
-.rock-image, .paper-image, .scissors-image {
-  width: 90px;
-  border-radius: 50px;
-  border: none;
-  background-color: black;
+.play-button:hover {
+  opacity: 0.9;
+}
+.play-button:active {
+  opacity: 0.5;
+}
+.icons {
+  height: 75px;
 }
 .result {
   font-size: 24px;
@@ -36,7 +42,7 @@ body {
   font-size: 21px;
 }
 .script-moves {
-  width: 42px;
+  width: 48px;
 }
 .score {
   margin-bottom: 30px;
